@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario Web Completo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Inventario Web - Heladería Splash</h1>
+    <nav>
+      <button onclick="mostrarSeccion('productos')">Productos</button>
+      <button onclick="mostrarSeccion('carrito')">Ventas</button>
+      <button onclick="mostrarSeccion('clientes')">Clientes</button>
+      <button onclick="mostrarSeccion('facturas'); mostrarFacturas();">Facturas</button>
+      <button onclick="mostrarSeccion('cuadre'); mostrarCuadre();">Cuadre del Día</button>
+      <button id="toggle-modo">🌙 Modo Noche</button>
+
+      <!-- NUEVO BOTÓN PRODUCTOS AGOTADOS -->
+      <button onclick="mostrarSeccion('agotados'); mostrarProductosAgotados();">Productos Agotados</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SECCIÓN PRODUCTOS -->
+    <section id="productos" class="seccion">
+      <h2>Lista de Productos</h2>
+      <input type="text" id="busqueda-producto" placeholder="Buscar por nombre o ID">
+      <div id="productos-contenedor" class="contenedor-productos"></div>
+    </section>
+
+    <!-- SECCIÓN PRODUCTOS AGOTADOS -->
+    <section id="agotados" class="seccion" style="display:none;">
+      <h2>Productos Críticos (≤ 5 unidades)</h2>
+      <div id="productos-agotados"></div>
+    </section>
+
+    <!-- SECCIÓN CARRITO / VENTAS -->
+    <section id="carrito" class="seccion" style="display:none;">
+      <h2>Carrito de Compras</h2>
+      <div id="carrito-contenedor"></div>
+      <div id="total-container">
+        <h3>Total: $<span id="total">0</span></h3>
+        <button onclick="facturar()">Facturar</button>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CLIENTES -->
+    <section id="clientes" class="seccion" style="display:none;">
+      <h2>Clientes</h2>
+      <form id="form-cliente">
+        <input type="text" id="nombre-cliente" placeholder="Nombre" required>
+        <button type="submit">Agregar Cliente</button>
+      </form>
+      <div id="lista-clientes"></div>
+    </section>
+
+    <!-- SECCIÓN FACTURAS -->
+    <section id="facturas" class="seccion" style="display:none;">
+      <h2>Facturas Generadas</h2>
+      <button onclick="limpiarFacturas()">Limpiar Todas las Facturas</button>
+      <div id="lista-facturas"></div>
+    </section>
+
+    <!-- SECCIÓN CUADRE DEL DÍA -->
+    <section id="cuadre" class="seccion" style="display:none;">
+      <h2>Cuadre del Día</h2>
+      <div id="lista-cuadre"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Inventario Web - Connor</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

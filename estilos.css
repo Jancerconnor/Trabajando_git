@@ -1,0 +1,259 @@
+este Pastel 🌟 */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #b3e5fc, #e1f5fe);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background: linear-gradient(90deg, #4fc3f7, #29b6f6);
+  color: white;
+  text-align: center;
+  padding: 21px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 150, 255, 0.4);
+  border-bottom: 4px solid #81d4fa;
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px #81d4fa; }
+  to { box-shadow: 0 0 25px #29b6f6; }
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.6);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 4px 25px rgba(0, 150, 255, 0.2);
+  padding: 25px;
+  backdrop-filter: blur(10px);
+}
+
+h2 {
+  text-align: center;
+  color: #0277bd;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+button {
+  background: linear-gradient(90deg, #4fc3f7, #0288d1);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-weight: 500;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 150, 255, 0.3);
+}
+
+input, select {
+  padding: 8px 12px;
+  border: 2px solid #81d4fa;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s;
+  font-size: 1em;
+}
+
+input:focus, select:focus {
+  border-color: #29b6f6;
+  box-shadow: 0 0 10px rgba(41, 182, 246, 0.4);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background: linear-gradient(90deg, #4fc3f7, #0288d1);
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #e0f7fa;
+}
+
+tr:hover {
+  background: #e1f5fe;
+  transition: 0.3s;
+}
+
+.footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 15px;
+  background: #4fc3f7;
+  color: white;
+  width: 100%;
+  border-top: 3px solid #81d4fa;
+  font-size: 0.9em;
+}
+
+/* 💫 Efecto de brillo en botones especiales */
+button.glow {
+  background: linear-gradient(90deg, #81d4fa, #29b6f6);
+  box-shadow: 0 0 10px rgba(41, 182, 246, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+button.glow:hover {
+  box-shadow: 0 0 20px rgba(41, 182, 246, 0.8);
+  transform: scale(1.05);
+}
+
+/* 💎 Etiquetas de producto agotado */
+.agotado {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.stock {
+  color: #388e3c;
+  font-weight: bold;
+}
+
+/* 🌙 Modo Noche */
+body.noche {
+  background: linear-gradient(135deg, #0d1117, #1a1a1a);
+  color: #eee;
+}
+
+body.noche header {
+  background: linear-gradient(90deg, #222, #444);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+  border-bottom: 4px solid #555;
+}
+
+body.noche .container {
+  background: rgba(30, 30, 30, 0.9);
+  box-shadow: 0 4px 25px rgba(255, 255, 255, 0.1);
+}
+
+body.noche h2 {
+  color: #80d8ff;
+}
+
+body.noche button {
+  background: linear-gradient(90deg, #555, #777);
+  color: #fff;
+}
+
+body.noche button:hover {
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+body.noche input, body.noche select {
+  border-color: #555;
+  background: #222;
+  color: #eee;
+}
+
+body.noche table {
+  background: #222;
+  color: #eee;
+}
+
+body.noche th {
+  background: linear-gradient(90deg, #555, #777);
+}
+
+body.noche tr:hover {
+  background: #333;
+}
+
+body.noche .footer {
+  background: #222;
+  border-top: 3px solid #555;
+  color: #eee;
+}
+
+/* 🌙 Modo Noche */
+body.noche {
+  background: linear-gradient(135deg, #0d1117, #1a1a1a);
+  color: #eee;
+}
+
+body.noche header {
+  background: linear-gradient(90deg, #222, #444);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+  border-bottom: 4px solid #555;
+}
+
+body.noche .container {
+  background: rgba(30, 30, 30, 0.9);
+  box-shadow: 0 4px 25px rgba(255, 255, 255, 0.1);
+}
+
+body.noche h2 {
+  color: #80d8ff;
+}
+
+body.noche button {
+  background: linear-gradient(90deg, #555, #777);
+  color: #fff;
+}
+
+body.noche button:hover {
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+body.noche input, body.noche select {
+  border-color: #555;
+  background: #222;
+  color: #eee;
+}
+
+body.noche table {
+  background: #222;
+  color: #eee;
+}
+
+body.noche th {
+  background: linear-gradient(90deg, #555, #777);
+}
+
+body.noche tr:hover {
+  background: #333;
+}
+
+body.noche .footer {
+  background: #222;
+  border-top: 3px solid #555;
+  color: #eee;
+}
